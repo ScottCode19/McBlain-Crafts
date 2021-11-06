@@ -1,6 +1,7 @@
 <!--
 
 WEBSITE BRIEF
+responsive added
 
 /////////NAV////////////
 McBLAIN CRAFTS
