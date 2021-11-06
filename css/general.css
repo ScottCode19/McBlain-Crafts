@@ -1,0 +1,80 @@
+/* 
+
+    font sizes(px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    Font weights
+    Default: 400
+    Medium: 500
+    Bold: 700
+
+
+    Line heights
+    Default: 1
+ 
+
+      
+    letter spacing
+    
+
+
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+Main color
+#1864ab
+#03045e
+#343a40
+
+shades
+#114678
+#071e33
+
+
+tints
+#74a2cd
+#d1e0ee
+#e8f0f7
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  font-family: rubik, sans-serif;
+  color: #343a40;
+  background-color: #caf0f8b7;
+  overflow-x: hidden;
+}
+
+h2 {
+  padding: 1.4rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #03045e;
+  font-size: 2rem;
+}
+
+.section-general {
+  padding: 0 1.2rem 3.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #03045e;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}

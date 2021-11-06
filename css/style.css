@@ -1,0 +1,347 @@
+/* /////////////// HEADER ///////////////*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.nav-open .nav {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.nav-open .section-hero {
+}
+
+.logo:link,
+.logo:visited {
+  text-decoration: none;
+  color: #e8f0f7;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "urbanist";
+}
+
+.nav-link {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #e8f0f7;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* ////////////// STICKY NAV /////////////// */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #03045e;
+  z-index: 1;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+/* ///////////// HERO SECTION ////////////// */
+
+.section-hero {
+  display: grid;
+  height: 100vh;
+  background-image: linear-gradient(#0000003b, #000000d0),
+    url("../img/monsterhero3-mobasp-900x1554.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.blank-div {
+  height: 20vh;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero-text-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.8rem;
+  color: #e8f0f7;
+  padding: 0 2.4rem;
+}
+
+.hero-text-box h1 {
+  font-size: 4.8rem;
+  color: white;
+}
+
+.hero-text-box p {
+  font-size: 1.8rem;
+}
+
+.hero-img-box {
+  width: 100%;
+}
+
+.hero-btn-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+
+.hero-btn:link,
+.hero-btn:visited {
+  display: inline-block;
+  font-weight: 700;
+  padding: 1.6rem 1.6rem;
+  background-color: #03045e;
+  color: white;
+}
+
+.btn-info:link,
+.btn-info:visited {
+  padding: 1.6rem 1.6rem;
+  font-weight: 400;
+  color: #e8f0f7;
+}
+
+/* ///////// BRANDS SECTION //////// */
+
+.section-brands {
+  padding: 0.8rem 1.4rem;
+}
+
+.brands {
+  background-color: #e8f0f7;
+}
+.brands-title {
+}
+.brands-logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands-logos-img {
+  height: 5rem;
+  filter: brightness(0);
+  opacity: 80%;
+}
+
+/* ///////// PRODUCT INFO SECTION //////// */
+
+.section-product-info {
+  background-color: white;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+.table-product-info {
+  text-align: left;
+  font-size: 1.4rem;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.8rem;
+}
+
+thead th {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+.table-product-info th {
+  width: 30%;
+}
+
+.table-product-info td {
+  width: 40%;
+}
+
+/*////////// TESTIMONIALS SECTION /////*/
+
+.section-testimonials {
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.8rem;
+}
+
+.testimonials-img-box {
+}
+
+.testimonials-img {
+  width: 100%;
+}
+
+.testimonials-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*/////////// HOW IT WORKS SECTION ///////////*/
+
+.section-how {
+  background-color: white;
+}
+
+.how-video-box {
+  width: 100%;
+}
+
+.how-video {
+  width: 100%;
+  height: 80vw;
+}
+
+/* ////////////// CTA SECTION /////////////// */
+
+.section-cta {
+}
+
+.cta-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 1.8rem;
+  margin: 0 1.8rem;
+  background-color: #fff;
+  color: #03045e;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.486);
+}
+
+.select-cta {
+  font-family: inherit;
+  background-color: #03045e;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.6rem 0;
+}
+
+.style-option-cta {
+  font-weight: 700;
+}
+.cta-img-box {
+  margin: 0 1.2rem;
+}
+.cta-img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+.cta-btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-cta:visited,
+.btn-cta:link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #03045e;
+  color: white;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.486);
+}
+
+.btn-cta-text {
+}
+
+.cta-ebay-logo {
+  height: 3rem;
+}
+
+/* ////////////// FOOTER //////////////// */
+
+.footer {
+  display: flex;
+  gap: 1.8rem;
+  background-color: white;
+  padding-top: 2.4rem;
+}
+
+.footer address {
+  font-style: normal;
+}
+
+.footer-heading {
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+}
+
+.address-text {
+  padding-bottom: 0.8rem;
+}
+
+.tel:link,
+.tel:visited {
+  text-decoration: none;
+  color: inherit;
+  font-style: none;
+}
